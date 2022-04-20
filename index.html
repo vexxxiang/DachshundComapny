@@ -60,6 +60,79 @@
                     
                 </div>
             </div>
+            <div class="Wycena">
+                <h1 class="Wycena-h1">Wycena</h1>
+                <h1 class="Wycena-Title">Napisz co potrzebujesz,</h1>
+                <h2 class="Wycena-SubTitle">a ja to dla ciebie wycenię !</h2>
+                <div class="Wycena-Radio">
+                    <span>
+                    <input type="radio" name="what" id="what1" />
+                    <label for="what1">Grafika</label>
+                    </span>
+                    <span>
+                    <input type="radio" name="what" id="what2" />
+                    <label for="what2">Strona WWW</label>
+                    </span>
+                </div>
+                <div class="Grafika Hidden">
+                    <span>
+                    <p>Imie i nazwisko</p>
+                    <input class="Imie-Nazwisko" type="text" placeholder="Imie i nazwisko"/>
+                    </span>
+                    <span>
+                    <p>E-Mail</p>
+                    <input class="E-Mail" type="text" placeholder="E-mail"/>
+                    </span>
+                    <span>
+                    <p>Co to ma być?</p>
+                    <input class="Typ" type="text" placeholder="Logo, Wizytówka, Ulotka..."/>
+                    </span>
+                    <span>
+                    <p>Na kiedy?</p>
+                    <input class="Kiedy" type="date" placeholder="dd/mm/rr"/>
+                    </span>
+                    <span>
+                    <p>Czego dotyczy?</p>
+                    <input class="Co-to" type="text" placeholder="Do czego będzie slużyć grafika?"/>
+                    </span>
+                    <span>
+                    <p>Jak ma wyglądać?</p>
+                    <input class="Wyglad" type="text" placeholder="Jak ma wyglądać (Możesz podać linki)"/>
+                    </span>
+                    <span>
+                    <p>Chcesz coś dodać?</p>
+                    <textarea class="Wiadomosc" type="text"  placeholder="Możesz tutaj opisać jak grafika ma wyglądać lub podać linki do grafik które ci się podobają"></textarea>
+                    </span>
+                    
+                </div>
+                <div class="StronaWWW Hidden">
+                    <p>Imie i nazwisko</p>
+                    <input class="Imie-Nazwisko" type="text"/>
+                    
+                    <p>E-Mail</p>
+                    <input class="E-Mail" type="text"/>
+                    
+                    <p>Na kiedy?</p>
+                    <input class="Kiedy" type="text"/>
+                    
+                    <p>Ile Podstron?</p>
+                    <input class="Co-to" type="text"/>
+                    
+                    <p>Linki stron które ci sie podobają</p>
+                    <input class="Co-to" type="text"/>
+                    
+                    <p>Czego dotyczy?</p>
+                    <input class="Co-to" type="text"/>
+                    
+                    <p>Jak ma wyglądać?</p>
+                    <input class="Wyglad" type="text"/>
+                    
+                    <p>Chcesz coś dodać?</p>
+                    <input class="Wiadomosc" type="text"/>
+                    
+                </div>
+                <button type="submit" class="Send Hidden">Wyślij</button>
+            </div>
         </div>
         
         <div class="footer">
@@ -73,6 +146,29 @@
         </div>
         <i class='bx bx-down-arrow-alt'></i>
         <script>
+            
+            document.querySelector("#what1").onclick = function(){What1()};
+            document.querySelector("#what2").onclick = function(){What2()};
+            
+            function What1()
+            {
+                document.querySelector(".Grafika").classList.remove("Hidden");
+                document.querySelector(".StronaWWW").classList.add("Hidden");
+                document.querySelector(".Send").classList.remove("Hidden");
+            }
+             function What2()
+            {
+                document.querySelector(".Grafika").classList.add("Hidden");
+                document.querySelector(".StronaWWW").classList.remove("Hidden");
+                document.querySelector(".Send").classList.remove("Hidden");
+            }
+            
+            
+            
+            
+            
+            
+            
             document.querySelector(".bx-down-arrow-alt").onclick = function() {Toggle()};
 
             function Toggle() {

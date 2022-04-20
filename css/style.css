@@ -392,3 +392,128 @@ nav i::before{
     box-shadow: 0 2px 12px rgba(0,0,0,0.4);
     border-radius: 24px;
 }
+
+
+.Wycena{
+    width:calc(100%-20px);
+    background-color: white;
+    padding:50px;
+    margin-bottom: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 12px rgba(255,255,255,0.5);
+    
+}
+.Wycena-h1{
+    font-size:42px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border-bottom:5px solid #1a1a1a;
+    padding-bottom: 12px;
+    margin-bottom:24px;
+    text-align: center;
+    margin: auto;
+}
+
+.Wycena-Title{
+    margin-top:24px;
+}
+.Wycena-SubTitle{
+    margin-bottom: 23px;
+}
+.Wycena-Radio{
+    display: flex;
+    
+    
+}
+
+
+.Wycena-Radio span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:36px;
+    font-size: 18px;
+    
+}
+
+.Hidden{
+    display: none !important;
+}
+.Grafika
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    width: 700px;
+    margin:auto;
+    
+}
+#what1
+{
+    width: 75px;
+}
+#what2{
+    width: 75px;
+}
+.Grafika span p
+{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.Grafika input
+{
+    
+    padding:5px 10px;
+    height: 35px;
+    width:330px;
+    border:none;
+    outline: none;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.5);
+    border-radius: 12px;
+}
+.Grafika span:last-child{
+    width: 700px;
+    grid-column-start:1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.Grafika span:last-child textarea{
+
+    width: 730px;
+    height: 80px;
+    padding:5px 10px;
+    border:none;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.5);
+    border-radius: 12px;
+    max-width: 730px;
+    min-width: 730px;
+    min-height: 80px;
+    max-height: 500px;
+    outline: none;
+   
+}
+.Send
+{
+    margin-top:24px;
+    padding:10px 30px;
+    width: 300px;
+    font-size: 24px;
+    border:none;
+    border-radius: 12px;
+    background:linear-gradient(to right,#2E1463,#9E145B);
+    color:white;
+    font-weight: 200;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.8);
+    transition: all 0.3s ease;
+}
+.Send:hover{
+    background:linear-gradient(to left,#2E1463,#9E145B);
+    font-size: 32px;
+    cursor: pointer;
+}
+
+
+
