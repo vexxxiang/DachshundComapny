@@ -514,6 +514,25 @@ nav i::before{
     font-size: 32px;
     cursor: pointer;
 }
-
+.StronaWWW
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    width: 700px;
+    margin:auto;
+    
+}
+.StronaWWW input
+{
+    
+    padding:5px 10px;
+    height: 35px;
+    width:330px;
+    border:none;
+    outline: none;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.5);
+    border-radius: 12px;
+}
 
 
