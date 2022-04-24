@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DachshundCompany</title>
         <link rel="stylesheet" href="css/style.css">
         <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -8,23 +9,31 @@
     </head>
     <body>
         
-        <div class="Wraper">
+        
         <nav>
-            
+            <span class="Logo-h1">
             <h1>DachshundCompany</h1>
-            
-            
+            </span>
+            <span class="Nav-Buttons">
             <a class="a1" href="#">Główna</a>
             <a class="a2" href="#">Kontakt</a>
             <a class="a3" href="#">Galeria</a>
-            <div class="Search">
-                <i class='bx bx-search' ></i>
-            <input type="text" placeholder="Szukaj...">
-            </div>
+            </span>
+            <i class='bx bx-menu'></i>
+                
+                <div class="Menu Hidden">
+                    <a href="#">Główna</a>
+                    <a href="#">Kontakt</a>
+                    <a href="#">Galeria</a>
+                    <i class='bx bx-x' ></i>
+                </div>
+
+
             
             
             
         </nav>
+        <div class="Wraper">
         <img class="Banner" src="img/banner.png"/>
             <div class="Info">
                 <h5>Czym się zajmujemy?</h5>
@@ -106,30 +115,38 @@
                     
                 </div>
                 <div class="StronaWWW Hidden">
+                    <span>
                     <p>Imie i nazwisko</p>
                     <input class="Imie-Nazwisko" type="text"/>
-                    
+                    </span>
+                    <span>
                     <p>E-Mail</p>
                     <input class="E-Mail" type="text"/>
-                    
+                    </span>
+                    <span>
                     <p>Na kiedy?</p>
-                    <input class="Kiedy" type="text"/>
-                    
+                    <input class="Kiedy" type="date"/>
+                    </span>
+                    <span> 
                     <p>Ile Podstron?</p>
                     <input class="Co-to" type="text"/>
-                    
+                    </span>
+                    <span>                  
                     <p>Linki stron które ci sie podobają</p>
                     <input class="Co-to" type="text"/>
-                    
+                    </span>
+                    <span>
                     <p>Czego dotyczy?</p>
                     <input class="Co-to" type="text"/>
-                    
+                    </span>
+                    <span>
                     <p>Jak ma wyglądać?</p>
                     <input class="Wyglad" type="text"/>
-                    
+                    </span>
+                    <span> 
                     <p>Chcesz coś dodać?</p>
-                    <input class="Wiadomosc" type="text"/>
-                    
+                    <textarea class="Wiadomosc" type="text"></textarea>
+                    </span>
                 </div>
                 <button type="submit" class="Send Hidden">Wyślij</button>
             </div>
@@ -146,10 +163,19 @@
         </div>
         <i class='bx bx-down-arrow-alt'></i>
         <script>
-            
+            document.querySelector(".bx-x").onclick = function(){x()};
+            document.querySelector(".bx-menu").onclick = function(){Menu()}; 
             document.querySelector("#what1").onclick = function(){What1()};
             document.querySelector("#what2").onclick = function(){What2()};
             
+            function x()
+            {
+                document.querySelector(".Menu").classList.add("Hidden");
+            }
+            function Menu()
+            {
+                document.querySelector(".Menu").classList.toggle("Hidden");
+            }
             function What1()
             {
                 document.querySelector(".Grafika").classList.remove("Hidden");
